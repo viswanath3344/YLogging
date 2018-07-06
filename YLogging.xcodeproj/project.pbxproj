@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		52C8B93720EF44B700F6CFB8 /* YLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 52C8B93520EF44B700F6CFB8 /* YLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52C8B93E20EF451000F6CFB8 /* YLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8B93D20EF451000F6CFB8 /* YLog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		52C8B93220EF44B700F6CFB8 /* YLogging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YLogging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C8B93520EF44B700F6CFB8 /* YLogging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLogging.h; sourceTree = "<group>"; };
 		52C8B93620EF44B700F6CFB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52C8B93D20EF451000F6CFB8 /* YLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				52C8B93520EF44B700F6CFB8 /* YLogging.h */,
 				52C8B93620EF44B700F6CFB8 /* Info.plist */,
+				52C8B93D20EF451000F6CFB8 /* YLog.swift */,
 			);
 			path = YLogging;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					52C8B93120EF44B700F6CFB8 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C8B93E20EF451000F6CFB8 /* YLog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +264,7 @@
 		52C8B93B20EF44B700F6CFB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -275,6 +281,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vedaslabs.YLogging;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,6 +290,7 @@
 		52C8B93C20EF44B700F6CFB8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
